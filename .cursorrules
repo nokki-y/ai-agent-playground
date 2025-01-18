@@ -1,0 +1,58 @@
+# Cursor Rules
+
+
+## Project Context
+
+- Next.js (App Router) + TypeScript project for comparing AI agent behaviors
+- Focus on frontend implementation with mock API responses
+- Used for technical blog content about AI agent differences
+
+
+## Code Style
+
+- Prefer TypeScript best practices and type safety
+- Follow Next.js App Router conventions
+- Use modern ES6+ syntax
+- Maintain consistent file structure
+
+
+## Response Guidelines
+
+- Suggest practical implementations for AI agent interactions
+- Focus on frontend state management and UI patterns
+- Provide type-safe solutions
+- Include error handling and edge cases
+- Consider performance implications
+- Suggest testing strategies when relevant
+- Always respond in Japanese
+
+
+## Documentation
+
+- Include JSDoc comments for complex functions
+- Document key architectural decisions
+- Explain AI-specific implementation details
+
+
+## Constraints
+
+- Keep solutions frontend-focused
+- Use mock data instead of real backend
+  - Use MSW (Mock Service Worker) for API mocking
+- Use Next.js v15.x for the project
+- Optimize for readability and maintainability
+- Minimize external dependencies
+  - Core dependencies: Next.js, React, TypeScript
+  - Additional libraries must be justified by specific needs
+  - Prefer native solutions over third-party packages when feasible
+
+
+## Project Structure
+
+- app/              # App Router pages and layouts
+  ├── layout.tsx    # Root layout
+  └── page.tsx      # Home page
+- components/       # Reusable UI components
+- types/           # TypeScript type definitions
+- mocks/           # Mock data and API responses
+- styles/          # Global styles and CSS modules
