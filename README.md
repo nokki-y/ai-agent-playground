@@ -16,7 +16,6 @@
 - Next.js 15.x (App Router)
 - React 19
 - TypeScript
-- MSW (APIモック)
 
 
 ## 開発環境のセットアップ

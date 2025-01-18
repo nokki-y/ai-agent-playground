@@ -38,7 +38,6 @@
 
 - Keep solutions frontend-focused
 - Use mock data instead of real backend
-  - Use MSW (Mock Service Worker) for API mocking
 - Use Next.js v15.x for the project
 - Optimize for readability and maintainability
 - Minimize external dependencies
