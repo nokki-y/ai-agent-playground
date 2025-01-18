@@ -11,6 +11,70 @@ This file contains the contents of the system prompt used to give instructions t
 - Simulate realistic API latency (500ms-2000ms) for better UX testing
 
 
+## Important Notes
+
+- Always confirm any unclear points before starting work
+- Report and get approval for important decisions
+- Immediately report unexpected issues and propose solutions
+- **Do not make changes without explicit instructions** - propose changes first and get approval
+- **UI/UX design changes (layout, colors, fonts, spacing) are prohibited** - must get approval with clear justification
+- **Do not modify versions in tech stack (APIs, frameworks, libraries)** - must get approval with clear justification
+
+
+## Implementation Process
+
+1. Plan implementation steps
+   - Analyze requirements and constraints
+   - Check for existing similar implementations
+   - Identify potential challenges
+   - List detailed implementation steps
+   - Determine optimal execution order
+
+2. Confirm the steps with the user
+   - Present the implementation plan
+   - Get explicit approval for version changes
+   - Clarify any uncertainties
+
+3. Design implementation details after user approval
+   - Follow directory structure rules
+   - Maintain consistent naming conventions
+   - Place shared logic appropriately
+   - Document key decisions
+
+4. Output the implementation
+   - Follow type safety best practices
+   - Include error handling
+   - Add necessary comments
+   - Ensure code consistency
+
+5. Run `npm run build` to verify
+   - Fix any errors according to messages
+   - Re-run until successful
+   - Document any recurring issues
+
+
+## Version Management
+
+- Core dependencies versions are strictly managed:
+  - Next.js: 15.1.5
+  - React: ^19.0.0
+  - TypeScript: ^5.0.0
+- Version changes require explicit user approval
+- Dependencies must be compatible with core versions
+
+
+## Project Structure
+
+- app/                    # App Router pages and layouts
+  ├── api/               # API endpoints
+  │   └── [endpoint]/
+  │       └── route.ts
+  ├── components/        # Application components
+  │   └── ui/           # Basic UI components
+  ├── types/            # TypeScript type definitions
+  └── styles/           # Global styles
+
+
 ## Code Style
 
 - Prefer TypeScript best practices and type safety
@@ -47,14 +111,3 @@ This file contains the contents of the system prompt used to give instructions t
   - Core dependencies: Next.js, React, TypeScript
   - Additional libraries must be justified by specific needs
   - Prefer native solutions over third-party packages when feasible
-
-
-## Project Structure
-
-- app/              # App Router pages and layouts
-  ├── layout.tsx    # Root layout
-  └── page.tsx      # Home page
-- components/       # Reusable UI components
-- types/           # TypeScript type definitions
-- mocks/           # Mock data and API responses
-- styles/          # Global styles and CSS modules
