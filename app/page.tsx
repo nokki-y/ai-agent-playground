@@ -1,10 +1,33 @@
+'use client';
+
 import Image from "next/image";
+import { useState } from 'react';
 import styles from "./page.module.css";
 
 export default function Home() {
+  const [response, setResponse] = useState<string>('');
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleClick = async () => {
+    try {
+      setIsLoading(true);
+      const res = await fetch('/api/sample');
+      const data = await res.json();
+      setResponse(data.message);
+    } catch {
+      setResponse('Error occurred');
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
     <div className={styles.page}>
       <main className={styles.main}>
+        <button onClick={handleClick} disabled={isLoading}>
+          {isLoading ? 'Loading...' : 'Call API'}
+        </button>
+        {response && <p>Response: {response}</p>}
         <Image
           className={styles.logo}
           src="/next.svg"

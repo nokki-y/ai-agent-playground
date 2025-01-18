@@ -1,11 +1,14 @@
 # Cursor Rules
 
+This file contains the contents of the system prompt used to give instructions to Cursor AI.
+
 
 ## Project Context
 
 - Next.js (App Router) + TypeScript project for comparing AI agent behaviors
 - Focus on frontend implementation with mock API responses
 - Used for technical blog content about AI agent differences
+- Simulate realistic API latency (500ms-2000ms) for better UX testing
 
 
 ## Code Style
